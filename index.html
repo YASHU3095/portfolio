@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yashraj B. Kharade — BCA Student & AI/ML Enthusiast</title>
+    <meta name="description" content="Yashraj B. Kharade — BCA student passionate about Artificial Intelligence, Machine Learning, and Software Development. Skilled in Python, Java, and web technologies." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Yashraj B. Kharade — BCA Student & AI/ML Enthusiast" />
+    <meta property="og:description" content="BCA student passionate about AI, Machine Learning, and Software Development." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-logo">YK</div>
+        <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      </div>
+    </div>
+
+    <!-- Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Canvas for particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>YK<span class="logo-bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="nav-cta" id="hire-btn">Hire Me</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#hero" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-greeting">Hello, I'm</span>
+          <span class="hero-name">
+            <span class="name-part">Yashraj</span>
+            <span class="name-part accent">Kharade</span>
+          </span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-prefix">—</span>
+          <span id="typed-role"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">
+          Motivated BCA student with a passion for <strong>Artificial Intelligence</strong>,
+          <strong>Machine Learning</strong>, and <strong>Software Development</strong>.
+          Building intelligent solutions for tomorrow's challenges.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">7.7</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Tech Skills</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-container">
+          <div class="profile-ring ring-1"></div>
+          <div class="profile-ring ring-2"></div>
+          <div class="profile-ring ring-3"></div>
+          <div class="profile-glow"></div>
+          <div class="profile-img-wrap">
+            <img src="profile.png" alt="Yashraj B. Kharade" class="profile-img" id="profile-img" />
+          </div>
+          <div class="profile-badge badge-ai">AI/ML</div>
+          <div class="profile-badge badge-python">Python</div>
+          <div class="profile-badge badge-java">Java</div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">01. About</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lead">
+              A <span class="highlight">motivated and enthusiastic</span> BCA student with a
+              strong interest in Artificial Intelligence, Machine Learning, and software development.
+            </p>
+            <p class="about-body">
+              Skilled in <strong>Python, Java, C</strong>, and web technologies with hands-on
+              experience in innovative technical projects. A quick learner with strong
+              problem-solving abilities and a passion for learning new technologies.
+            </p>
+            <div class="about-info-grid">
+              <div class="info-card">
+                <div class="info-icon">🎓</div>
+                <div class="info-text">
+                  <span class="info-label">College</span>
+                  <span class="info-value">ADCET, Ashta</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">📚</div>
+                <div class="info-text">
+                  <span class="info-label">Degree</span>
+                  <span class="info-value">BCA (2nd Year)</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">🏆</div>
+                <div class="info-text">
+                  <span class="info-label">CGPA</span>
+                  <span class="info-value">7.7 / 10</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Sangli, Maharashtra</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-interests">
+            <h3 class="interests-title">Areas of Interest</h3>
+            <div class="interests-grid">
+              <div class="interest-card" data-delay="0">
+                <div class="interest-icon">🤖</div>
+                <span>Artificial Intelligence</span>
+              </div>
+              <div class="interest-card" data-delay="100">
+                <div class="interest-icon">🧠</div>
+                <span>Machine Learning</span>
+              </div>
+              <div class="interest-card" data-delay="200">
+                <div class="interest-icon">💻</div>
+                <span>Software Development</span>
+              </div>
+              <div class="interest-card" data-delay="300">
+                <div class="interest-icon">📊</div>
+                <span>Data Science</span>
+              </div>
+            </div>
+            <h3 class="interests-title" style="margin-top: 2rem;">Languages</h3>
+            <div class="languages">
+              <span class="lang-tag">English</span>
+              <span class="lang-tag">Hindi</span>
+              <span class="lang-tag">Marathi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">02. Skills</span>
+          <h2 class="section-title">Tech Arsenal</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skills-categories">
+            <div class="skill-category">
+              <h3 class="category-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Programming
+              </h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-pct">85%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Java</span>
+                    <span class="skill-pct">75%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">C</span>
+                    <span class="skill-pct">70%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Web Technologies
+              </h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">HTML/CSS</span>
+                    <span class="skill-pct">80%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                AI / ML Basis
+              </h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">ML Fundamentals</span>
+                    <span class="skill-pct">72%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="strengths-panel">
+            <h3 class="strengths-title">Strengths</h3>
+            <div class="strength-tags">
+              <div class="strength-tag">
+                <span class="s-icon">⚡</span>
+                <span>Quick Learner</span>
+              </div>
+              <div class="strength-tag">
+                <span class="s-icon">🔍</span>
+                <span>Problem Solving</span>
+              </div>
+              <div class="strength-tag">
+                <span class="s-icon">💬</span>
+                <span>Good Communication</span>
+              </div>
+              <div class="strength-tag">
+                <span class="s-icon">🤝</span>
+                <span>Teamwork</span>
+              </div>
+              <div class="strength-tag">
+                <span class="s-icon">💡</span>
+                <span>Creative Thinking</span>
+              </div>
+              <div class="strength-tag">
+                <span class="s-icon">😊</span>
+                <span>Positive Attitude</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tech logos floating row -->
+        <div class="tech-marquee">
+          <div class="marquee-track">
+            <span class="tech-logo">Python</span>
+            <span class="tech-logo">Java</span>
+            <span class="tech-logo">C</span>
+            <span class="tech-logo">HTML5</span>
+            <span class="tech-logo">CSS3</span>
+            <span class="tech-logo">AI/ML</span>
+            <span class="tech-logo">Data Science</span>
+            <span class="tech-logo">Python</span>
+            <span class="tech-logo">Java</span>
+            <span class="tech-logo">C</span>
+            <span class="tech-logo">HTML5</span>
+            <span class="tech-logo">CSS3</span>
+            <span class="tech-logo">AI/ML</span>
+            <span class="tech-logo">Data Science</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">03. Projects</span>
+          <h2 class="section-title">What I've Built</h2>
+        </div>
+        <div class="projects-grid">
+
+          <!-- Project 1: ChargeOnGo -->
+          <div class="project-card featured">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="p-tag">Python</span>
+                <span class="p-tag">AI</span>
+                <span class="p-tag">Mobile</span>
+              </div>
+              <h3 class="project-title">ChargeOnGo</h3>
+              <p class="project-desc">
+                Designed a <strong>smart EV charging solution</strong> that helps users locate
+                charging stations and provides emergency mobile charging assistance. Built to
+                tackle real-world electric vehicle infrastructure challenges.
+              </p>
+              <div class="project-features">
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  Smart station locator
+                </div>
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  Emergency charging assistance
+                </div>
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  Real-time availability
+                </div>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-mockup ev-mockup">
+                <div class="mockup-screen">
+                  <div class="mock-header">
+                    <div class="mock-dot r"></div>
+                    <div class="mock-dot g"></div>
+                    <div class="mock-dot b"></div>
+                  </div>
+                  <div class="mock-content">
+                    <div class="mock-map">
+                      <div class="map-pin pin1">⚡</div>
+                      <div class="map-pin pin2">⚡</div>
+                      <div class="map-pin pin3">🔋</div>
+                      <div class="map-grid"></div>
+                    </div>
+                    <div class="mock-info">
+                      <div class="info-line short green"></div>
+                      <div class="info-line med"></div>
+                      <div class="info-line long"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Diet Recommendation System -->
+          <div class="project-card">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="p-tag">Python</span>
+                <span class="p-tag">AI</span>
+                <span class="p-tag">ML</span>
+              </div>
+              <h3 class="project-title">Diet Recommendation System</h3>
+              <p class="project-desc">
+                Developed an <strong>intelligent diet recommendation system</strong> that provides
+                personalized diet plans based on user health details, fitness goals, and food
+                preferences using Python and AI-based logic.
+              </p>
+              <div class="project-features">
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  Personalized meal planning
+                </div>
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  AI-based recommendations
+                </div>
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  Health goal tracking
+                </div>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-mockup diet-mockup">
+                <div class="mockup-screen">
+                  <div class="mock-header">
+                    <div class="mock-dot r"></div>
+                    <div class="mock-dot g"></div>
+                    <div class="mock-dot b"></div>
+                  </div>
+                  <div class="mock-content diet-content">
+                    <div class="diet-chart">
+                      <div class="chart-bar" style="height:70%; background: var(--accent)"></div>
+                      <div class="chart-bar" style="height:50%; background: var(--accent-2)"></div>
+                      <div class="chart-bar" style="height:85%; background: var(--accent)"></div>
+                      <div class="chart-bar" style="height:60%; background: var(--accent-2)"></div>
+                      <div class="chart-bar" style="height:75%; background: var(--accent)"></div>
+                    </div>
+                    <div class="mock-info">
+                      <div class="info-line short"></div>
+                      <div class="info-line med green"></div>
+                      <div class="info-line long"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Project 3: Chatbot in Vending Machine -->
+          <div class="project-card">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="p-tag">Chatbot</span>
+                <span class="p-tag">AI</span>
+                <span class="p-tag">IoT</span>
+                <span class="p-tag">Python</span>
+              </div>
+              <h3 class="project-title">Chatbot Integration in Vending Machine</h3>
+              <p class="project-desc">
+                Designed and developed a <strong>conversational AI chatbot</strong> integrated
+                into a vending machine system, enabling users to interact naturally via text
+                to browse products, place orders, get recommendations, and receive
+                real-time support — making vending smarter and more accessible.
+              </p>
+              <div class="project-features">
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  Natural language product ordering
+                </div>
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  AI-powered recommendations
+                </div>
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  Real-time conversational support
+                </div>
+                <div class="feature">
+                  <span class="feature-dot"></span>
+                  Smart inventory awareness
+                </div>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-mockup chatbot-mockup">
+                <div class="mockup-screen">
+                  <div class="mock-header">
+                    <div class="mock-dot r"></div>
+                    <div class="mock-dot g"></div>
+                    <div class="mock-dot b"></div>
+                  </div>
+                  <div class="mock-content chatbot-content">
+                    <div class="chat-bubble bot">
+                      <span class="chat-avatar">🤖</span>
+                      <div class="chat-text">Hi! What would you like?</div>
+                    </div>
+                    <div class="chat-bubble user">
+                      <div class="chat-text">A cold drink please</div>
+                    </div>
+                    <div class="chat-bubble bot">
+                      <span class="chat-avatar">🤖</span>
+                      <div class="chat-text">Dispensing Sprite! 🥤</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">04. Education</span>
+          <h2 class="section-title">Academic Journey</h2>
+        </div>
+        <div class="education-timeline">
+          <div class="timeline-item active">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+            <div class="timeline-content">
+              <div class="edu-year">2023 – Present</div>
+              <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+              <p class="edu-institution">Annasaheb Dange College of Engineering and Technology (ADCET), Ashta</p>
+              <div class="edu-meta">
+                <span class="edu-badge cgpa">CGPA: 7.7</span>
+                <span class="edu-badge year">2nd Year Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">05. Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p class="contact-intro">
+              I'm currently open to <strong>internship opportunities</strong> and
+              <strong>collaborative projects</strong>. Whether you have a project in mind or just
+              want to say hi — my inbox is always open!
+            </p>
+            <div class="contact-cards">
+              <a href="tel:+919822984050" class="contact-card" id="phone-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="cc-label">Phone</span>
+                  <span class="cc-value">+91 9822984050</span>
+                </div>
+              </a>
+              <a href="mailto:yashrajkharade3095@gmail.com" class="contact-card" id="email-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="cc-label">Email</span>
+                  <span class="cc-value">yashrajkharade3095@gmail.com</span>
+                </div>
+              </a>
+              <div class="contact-card" id="location-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="cc-label">Location</span>
+                  <span class="cc-value">Laxminagar, Old Kupwad Road, Sangli - 416416</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Yashraj, I'd like to discuss..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>YK<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">Yashraj B. Kharade &mdash; BCA Student & AI/ML Enthusiast</p>
+        <p class="footer-copy">&copy; 2025 Yashraj B. Kharade. Built with passion.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "yashraj-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Yashraj B. Kharade",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx serve . -p 3000"
+  },
+  "keywords": ["portfolio", "bca", "ai", "ml"],
+  "author": "Yashraj B. Kharade"
+}
